@@ -1,7 +1,7 @@
 <div align="center">
   <h1>🧠 ATS Genius</h1>
-  <h3>Free AI-Powered Resume Analyzer</h3>
-  <p>🔍 Optimize your resume. Impress recruiters. Get hired faster.</p>
+  <h3>AI-Powered Resume Analyzer</h3>
+  <p>🔍 Optimize your resume. Impress recruiters.</p>
 
   <!-- Badges -->
   <p>
