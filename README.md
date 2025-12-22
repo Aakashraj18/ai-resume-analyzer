@@ -20,6 +20,10 @@ Built entirely on the **Puter Platform**, it integrates **AI**, **authentication
 
 ---
 
+## Live Link
+
+🔗 Live Demo: https://ai-resume-analyzer-three-pi.vercel.app/
+
 ## 🚀 Features
 
 ✅ **AI-powered resume scoring** – Evaluates resumes like real ATS software  
