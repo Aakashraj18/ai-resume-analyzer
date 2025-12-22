@@ -6,19 +6,29 @@ import {useNavigate} from "react-router";
 import {convertPdfToImage} from "~/lib/pdf2img";
 import {generateUUID} from "~/lib/utils";
 import {prepareInstructions} from "../../constants";
+import { useEffect } from "react";
 
 const Upload = () => {
-    const { auth, isLoading, fs, ai, kv } = usePuterStore();
+    const { auth, isLoading, fs, ai, kv, puterReady, init } = usePuterStore();
     const navigate = useNavigate();
     const [isProcessing, setIsProcessing] = useState(false);
     const [statusText, setStatusText] = useState('');
     const [file, setFile] = useState<File | null>(null);
+
+    useEffect(() => {
+        init(); // This starts the script check and auth status check
+    }, [init]);
 
     const handleFileSelect = (file: File | null) => {
         setFile(file)
     }
 
     const handleAnalyze = async ({ companyName, jobTitle, jobDescription, file }: { companyName: string, jobTitle: string, jobDescription: string, file: File  }) => {
+        if (!kv || !fs || !ai) {
+        setStatusText('Error: Puter services not initialized. Please refresh or sign in.');
+        setIsProcessing(false);
+        return;
+    }
         setIsProcessing(true);
 
         setStatusText('Uploading the file...');
@@ -113,8 +123,12 @@ const Upload = () => {
                                 <FileUploader onFileSelect={handleFileSelect} />
                             </div>
 
-                            <button className="primary-button" type="submit">
-                                Analyze Resume
+                            <button 
+                                className="primary-button disabled:opacity-50" 
+                                type="submit"
+                                disabled={!puterReady || isLoading}
+                            >
+                                {puterReady ? "Analyze Resume" : "Loading Services..."}
                             </button>
                         </form>
                     )}

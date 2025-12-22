@@ -28,10 +28,11 @@ const Resume = () => {
             const resume = await kv.get(`resume:${id}`);
             if(!resume) return;
 
+            const data = JSON.parse(resume);
+
             const resumeBlob = await fs.read(data.resumePath);
             if(!resumeBlob) return;
-
-            const data = JSON.parse(resume);
+            
             const pdfBlob = new Blob([resumeBlob], { type: 'application/pdf' });
             const resumeUrl = URL.createObjectURL(pdfBlob);
             setResumeUrl(resumeUrl);
