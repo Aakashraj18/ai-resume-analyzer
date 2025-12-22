@@ -49,7 +49,8 @@ export default function Home() {
         {!loadingResumes && resumes?.length === 0 ? (
             <h2>No resumes found. Upload your first resume to get feedback.</h2>
         ): (
-          <h2>Review your submissions and check AI-powered feedback.</h2>
+          <h2>ATS Genius – Your Free AI-Powered Resume Analyzer
+            Review your submissions and check AI-powered feedback.</h2>
         )}
       </div>
 

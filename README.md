@@ -7,8 +7,6 @@
   <p>
     <img src="https://img.shields.io/badge/Made%20with-React-blue?logo=react" alt="React Badge" />
     <img src="https://img.shields.io/badge/Powered%20by-Puter-purple?logo=ai" alt="Puter Badge" />
-    <img src="https://img.shields.io/badge/License-MIT-green" alt="License Badge" />
-    <img src="https://img.shields.io/badge/Status-Live-brightgreen" alt="Live Status Badge" />
   </p>
 </div>
 
