@@ -62,8 +62,6 @@ Built entirely on the **Puter Platform**, it integrates **AI**, **authentication
 
 ## 💡 Why ATS Genius?
 
-Most resumes never reach recruiters because of **ATS filters**.
-
 **ATS Genius** simulates real ATS evaluation using **AI**, providing:
 - Keyword relevance insights  
 - Structural & formatting feedback  
