@@ -32,7 +32,7 @@ export const resumes: Resume[] = [
   {
     id: "2",
     companyName: "Microsoft",
-    jobTitle: "Cloud Engineer",
+    jobTitle: "Software Engineer",
     imagePath: "/images/resume_02.png",
     resumePath: "/resumes/resume-2.pdf",
     feedback: {
