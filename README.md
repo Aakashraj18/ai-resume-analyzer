@@ -7,6 +7,8 @@
   <p>
     <img src="https://img.shields.io/badge/Made%20with-React-blue?logo=react" alt="React Badge" />
     <img src="https://img.shields.io/badge/Powered%20by-Puter-purple?logo=ai" alt="Puter Badge" />
+    <img src="https://img.shields.io/badge/Powered%20by-Puter.js-9333EA?logo=ai" alt="Puter" />
+    <img src="https://img.shields.io/badge/Style-Tailwind%20CSS-06B6D4?logo=tailwindcss" alt="Tailwind" />
   </p>
 </div>
 
